@@ -39,13 +39,15 @@ end
 totalE_Demand = sum(pLoad)*dt;
 %fprintf('Total Energy Demand= %0.2f kWh\n',totalE_Demand);
 
-%Plot the load profile for the entire year
+%Plot one week of the profile to show the shift cycle
+% (the simulation itself uses the full year)
+wk = 1:7*24*12; % first 7 days at 5-minute resolution
 figure;
-plot(tSpan, pLoad, 'LineWidth', 1);
-title('Electricity Demand Load for Car Factory (2020)');
-xlabel('Date');
+plot(tSpan(wk), pLoad(wk), 'LineWidth', 1);
+title('Electricity Demand Load for Car Factory (first week of 2020)');
+xlabel('Days in a week');
 ylabel('Load (kW)');
-xlim([tSpan(1), tSpan(end)]);
+xlim([tSpan(wk(1)), tSpan(wk(end))]);
 ylim([10000, 30000]);
-datetick('x', 'mmm', 'keepticks');
+datetick('x', 'dd', 'keepticks');
 grid on;

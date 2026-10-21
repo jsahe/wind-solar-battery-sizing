@@ -51,6 +51,10 @@ sweeps from 5 to 25 turbines. Total savings peak at 14.
 |---|---|---|
 | ![Cp curve](figures/wind_cp_curve.jpg) | ![Wind power](figures/wind_power_jan2020.jpg) | ![Solar power](figures/solar_power.jpg) |
 
+![One week of the simulated plant load, showing the night-shift dip each day](figures/load_profile_week.jpg)
+
+<sub>One week of the simulated load, plotted to show the daily shift cycle. The sizing runs on the full year.</sub>
+
 ## Running it
 
 Requirements: MATLAB R2020b or later. No toolboxes.
