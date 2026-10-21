@@ -1,0 +1,9 @@
+.DS_Store
+*.asv
+*.m~
+*.mat
+slprj/
+*.EES
+*.ees
+~$*.xlsx
+data/west-lafayette-2020-solar.csv
